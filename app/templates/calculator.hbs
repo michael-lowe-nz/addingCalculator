@@ -1,0 +1,13 @@
+{{outlet}}
+<h1>Addition Calculator</h1>
+<p>This calculator will help you add, fast.</p>
+{{input
+  type='tel'
+  id='inputNumber'
+}}
+<button>{{action "addNumber" 4}}</button>
+<div class="numbers">
+  {{#each model as |number|}}
+    <p>{{number}}</p>
+  {{/each}}
+</div>
