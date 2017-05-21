@@ -1,2 +1,4 @@
-{{input type="tel" label="enter number"}}
+<p>Enter a number</p>
+{{input type="tel" label="enter number" value=currentInput}}
+<button {{action 'add' currentInput}}>add</button>
 <h2>{{sumNumbers}}</h2>
